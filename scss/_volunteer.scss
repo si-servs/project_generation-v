@@ -1,0 +1,38 @@
+/*----------------------------------------*/
+/*  14.  Volunteer Area
+/*----------------------------------------*/
+.volunteer-area {
+    background-color: #373737;
+}
+/*-- Single Volunteer --*/
+.single-volunteer {
+    & .image {
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        padding-top: 34px;
+        & h4 {
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $color-white;
+            font-weight: 600;
+            line-height: 14px;
+        }
+        & span {
+            color: $theme-color;
+            font-size: 12px;
+            line-height: 12px;
+            display: block;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            margin-bottom: 12px;
+        }
+        & p {
+            color: #bcbcbc;
+            font-weight: 300;
+            line-height: 22px;
+        }
+    }
+}

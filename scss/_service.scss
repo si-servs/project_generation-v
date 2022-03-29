@@ -1,0 +1,45 @@
+/*----------------------------------------*/
+/*  4.  Service Area
+/*----------------------------------------*/
+.service-area {}
+/*-- Single Service --*/
+.single-service {
+    background-color: $theme-color;
+    padding: 60px 15px;
+    @media #{$tablet-device}{
+        padding: 60px 45px;
+    }
+    @media #{$large-mobile}{
+        padding: 60px 45px;
+    }
+    @media #{$small-mobile}{
+        padding: 45px 30px;
+    }
+    &:nth-child(1) {
+        background-color: $theme-color;
+    }
+    &:nth-child(2) {
+        background-color: darken($theme-color, 5);
+    }
+    &:nth-child(3) {
+        background-color: darken($theme-color, 10);
+    }
+    &:nth-child(4) {
+        background-color: darken($theme-color, 15);
+    }
+    & img {
+        margin-bottom: 20px;
+    }
+    & h4 {
+        font-size: 18px;
+        color: $color-white;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    & p {
+        color: $color-white;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 300;
+    }
+}

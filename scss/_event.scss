@@ -1,0 +1,222 @@
+/*----------------------------------------*/
+/*  11.  Event Area
+/*----------------------------------------*/
+/*-- Event List --*/
+.event-list {
+    background-color: #f5f5f5;
+    margin-bottom: 15px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    & .date {
+        border-right: 2px solid $color-white;
+        width: 114px;
+        text-align: center;
+        padding: 29px 15px 25px;
+        margin-right: -2px;
+        @media #{$small-mobile}{
+            border: none;
+            margin: 0;
+            width: auto;
+            padding: 15px 20px 0;
+        }
+        & h1 {
+            font-size: 36px;
+            font-weight: 600;
+            color: $text-color;
+            line-height: 27px;
+            @include transition(all 0.3s ease 0s);
+        }
+        & h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: $text-color;
+            line-height: 14px;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            @include transition(all 0.3s ease 0s);
+        }
+    }
+    &:hover .date {
+        & h1 {
+            color: $theme-color;
+        }
+        & h4 {
+            color: $theme-color;
+        }
+    }
+    & .content {
+        border-left: 2px solid $color-white;
+        padding: 17px 24px 15px;
+        @media #{$small-mobile}{
+            border: none;
+            width: 100%;
+            padding: 15px 20px 15px;
+        }
+        & a {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 26px;
+            color: $text-color;
+            text-transform: uppercase;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+        & p {
+            line-height: 22px;
+            font-weight: 300;
+        }
+    }
+}
+/*-- Event Tab List --*/
+.event-tabs-list {
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    margin-bottom: 25px;
+    & li {
+        display: block;
+        float: left;
+        border-left: 1px solid $color-white;
+        border-right: 1px solid $color-white;
+        @media #{$small-mobile}{
+            width: 100% !important;
+            border-left: none;
+            border-right: none;
+            border-top: 1px solid $color-white;
+            border-bottom: 1px solid $color-white;
+        }
+        &:first-child {
+            border-left: none;
+            @media #{$small-mobile}{
+                border-top: none;
+            }
+        }
+        &:last-child {
+            border-right: none;
+            @media #{$small-mobile}{
+                border-bottom: none;
+            }
+        }
+        & a {
+            background-color: $theme-color;
+            color: $color-white;
+            text-transform: uppercase;
+            font-weight: 400;
+            line-height: 25px;
+            padding: 12px 20px;
+            display: block;
+            &:hover, &.active {
+                background-color: darken($theme-color, 8);
+            }
+        }
+    }
+    &.list-2 {
+        & li {
+            width: 50%;
+        }
+    }
+    &.list-3 {
+        & li {
+            width: 33.3333%;
+        }
+    }
+    &.list-4 {
+        & li {
+            width: 25%;
+        }
+    }
+    &.list-5 {
+        & li {
+            width: 20%;
+        }
+    }
+}
+/*-- Tab Content --*/
+.tab-content {
+    width: 100%;
+    float: left;
+}
+.table-responsive {
+    margin-bottom: 100px;
+}
+/*-- Event Details Table --*/
+.event-details-table {
+    margin-bottom: 0;
+    & thead {
+        & tr {
+            &.free-space {
+                height: 17px;
+                opacity: 0;
+                & td {
+                    display: none;
+                }
+            }
+            & th {
+                width: 25%;
+                text-align: center;
+                border: 1.5px solid #ececec !important;
+                padding: 8px 20px;
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 23px;
+                color: #8b8b8b;
+                font-family: $montserrat;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+    & tbody {
+        & tr {
+            &.free-space {
+                height: 3px;
+                opacity: 0;
+                & td {
+                    display: none;
+                }
+                &:last-child {
+                    display: none;
+                }
+            }
+            & td {
+                width: 25%;
+                text-align: center;
+                border: none !important;
+                line-height: 25px;
+                padding: 15px 20px;
+                color: #848484;
+                background-color: #f5f5f5;
+            }
+        }
+    }
+}
+/*-- Event Speaker --*/
+.single-speaker {
+    background-color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    & .image {
+        & img {
+            width: 100%;
+        }
+    }
+    & .content {
+        padding: 30px 25px 28px;
+        & h4 {
+            font-size: 20px;
+            color: #656565;
+            line-height: 15px;
+            text-transform: uppercase;
+            margin-bottom: 11px;
+        }
+        & p {
+            font-family: $montserrat;
+            font-weight: 500;
+            font-size: 13px;
+            color: $theme-color;
+            line-height: 11px;
+            text-transform: uppercase;
+        }
+    }
+}

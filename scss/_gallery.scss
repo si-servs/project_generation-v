@@ -1,0 +1,46 @@
+/*----------------------------------------*/
+/*  12.  Gallery Area
+/*----------------------------------------*/
+.gallery-area {}
+.small-gallery-wrapper {
+    & .row {
+        padding-right: 35px;
+        @media #{$desktop-device}{
+            padding-right: 0;
+        }
+        @media #{$tablet-device}{
+            padding-right: 0;
+        }
+        @media #{$large-mobile}{
+            padding-right: 0;
+        }
+    }
+}
+/*-- Single Gallery Item --*/
+.gallery-item {
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background-color: $theme-color;
+        background-image: url(img/icon/plus.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0;
+        @include transform(scale(3));
+    }
+    &:hover::before {
+        opacity: 0.9;
+        @include transform(scale(1));
+    }
+    & img {
+        width: 100%;
+    }
+}

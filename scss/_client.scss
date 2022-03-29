@@ -1,0 +1,21 @@
+/*----------------------------------------*/
+/*  13.  Client Area
+/*----------------------------------------*/
+.client-area {
+    @media #{$large-mobile}{
+        padding: 70px 0;
+    }
+}
+/*-- Client Slider --*/
+.client-slider {
+    & .client-item {
+		text-align: center;
+        & img {
+            display: inline-flex;
+            opacity: 0.6;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

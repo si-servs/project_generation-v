@@ -1,0 +1,58 @@
+/*----------------------------------------*/
+/*  10.  Video Area
+/*----------------------------------------*/
+.video-area {
+    background-image: url(img/bg/video.jpg);
+    @media #{$tablet-device}{
+        padding: 120px 0;
+    }
+    @media #{$large-mobile}{
+        padding: 120px 0;
+    }
+}
+/*-- Video Wrapper --*/
+.video-wrapper {
+    & h1 {
+        font-size: 36px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: $color-white;
+        @media #{$tablet-device}{
+            font-size: 30px;
+        }
+        @media #{$large-mobile}{
+            font-size: 20px;
+        }
+    }
+    & p {
+        max-width: 800px;
+        font-size: 16px;
+        color: $color-white;
+        line-height: 23px;
+        display: block;
+        margin: 14px auto 25px;
+        @media #{$tablet-device}{
+            font-size: 14px;
+            margin: 10px auto 20px;
+        }
+        @media #{$large-mobile}{
+            font-size: 14px;
+            margin: 10px auto 20px;
+        }
+    }
+    & a {
+        margin: 0 auto;
+        display: inline-block;
+        color: $color-white;
+        & i {
+            display: block;
+            font-size: 80px;
+            line-height: 67px;
+            @media #{$large-mobile}{
+                font-size: 60px;
+                line-height: 51px;
+            }
+        }
+    }
+}

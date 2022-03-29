@@ -1,0 +1,183 @@
+/*-- Section Title --*/
+.section-title {
+    & h1 {
+        font-size: 60px;
+        line-height: 50px;
+        color: $theme-color;
+        font-weight: 700;
+        margin-bottom: 19px;
+        @media #{$large-mobile}{
+            font-size: 46px;
+            line-height: 36px;
+        }
+        @media #{$small-mobile}{
+            font-size: 36px;
+            line-height: 28px;
+        }
+    }
+    & h2 {
+        font-size: 36px;
+        line-height: 26px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        @media #{$tablet-device}{
+            font-size: 30px;
+            line-height: 22px;
+        }
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 18px;
+        }
+        @media #{$small-mobile}{
+            font-size: 18px;
+            line-height: 14px;
+        }
+    }
+    &.white h2 {
+        color: $color-white;
+    }
+    & p {
+        max-width: 800px;
+        font-size: 16px;
+        color: #616161;
+        line-height: 23px;
+        display: block;
+        margin: 35px auto 0;
+        @media #{$large-mobile}{
+            font-size: 14px;
+            margin-top: 25px;
+        }
+        @media #{$small-mobile}{
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    }
+}
+/*-- Block Title --*/
+.block-title {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+/*-- Page Banner Area --*/
+.page-banner-area {
+    background-image: url(img/bg/page-banner.jpg);
+    padding: 140px 0 133px;
+    z-index: 1;
+    @media #{$tablet-device}{
+        padding: 110px 0 103px;
+    }
+    @media #{$large-mobile}{
+        padding: 80px 0 73px;
+    }
+    @media #{$small-mobile}{
+        padding: 60px 0 53px;
+    }
+}
+/*-- Page Banner --*/
+.page-banner {
+    & h2 {
+        color: $color-white;
+        font-size: 30px;
+        text-transform: uppercase;
+        line-height: 22px;
+		margin-bottom: 15px;
+        @media #{$large-mobile}{
+            font-size: 24px;
+            line-height: 18px;
+        }
+        @media #{$small-mobile}{
+            font-size: 18px;
+            line-height: 14px;
+        }
+    }
+    & ul {
+        overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+        & li {
+            display: inline-block;
+            padding-right: 20px;
+            margin-right: 15px;
+            position: relative;
+            &::after {
+                content: "\f2fb";
+                font-family: "Material-Design-Iconic-Font";
+                color: $color-white;
+                position: absolute;
+                right: 0;
+                font-size: 18px;
+                top: -1px;
+                line-height: 12px;
+                display: block;
+            }
+            &:last-child {
+                margin-right: 0;
+                padding-right: 0;
+                &::after {
+                    display: none;
+                }
+            }
+            & a {
+                display: block;
+                color: $color-white;
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 12px;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+/*-- Pagination --*/
+.pagination {
+    width: 100%;
+    margin: 20px 0 0;
+    & ul {
+        display: inline-block;
+        vertical-align: top;
+        & li {
+            display: block;
+            margin-right: 5px;
+            float: left;
+            &:last-child {
+                margin-right: 0px;
+            }
+            & a {
+                display: block;
+                background-color: $color-white;
+                box-shadow: 0 2px 5px rgba($color-black, 0.1);
+                width: 34px;
+                height: 34px;
+                text-align: center;
+                line-height: 34px;
+                &:hover {
+                    background-color: $theme-color;
+                    color: $color-white;
+                }
+                & i {
+                    line-height: 34px;
+                    font-size: 18px;
+                }
+            }
+            &.active a {
+                background-color: $theme-color;
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.slick-space {
+    margin-left: -15px;
+    margin-right: -15px;
+    .slick-slide {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

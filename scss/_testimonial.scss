@@ -1,0 +1,68 @@
+/*----------------------------------------*/
+/*  15.  Testimonial Area
+/*----------------------------------------*/
+.testimonial-area {
+    background-image: url(img/bg/testimonial.jpg);
+}
+/*-- Testimonial Slider --*/
+.testimonial-slider {}
+/*-- Single Testimonial --*/
+.single-testimonial {
+    & .content {
+        background-color: rgba($color-black, 0.1);
+        padding: 38px 30px 40px 30px;
+        margin-bottom: 32px;
+        position: relative;
+        &::before {
+            position: absolute;
+            left: 30px;
+            top: 100%;
+            content: "";
+            border-left: 14px solid transparent;
+            border-right: 14px solid transparent;
+            border-top: 18px solid rgba($color-black, 0.1);
+        }
+        & p {
+            color: $color-white;
+            font-weight: 300;
+            line-height: 22px;
+        }
+    }
+    & .author {
+        margin-left: 9px;
+        & img {
+            float: left;
+            width: 70px;
+            height: 70px;
+            padding: 2px;
+            background-color: $color-white;
+            margin-right: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        & .details {
+            margin-top: 16px;
+            & h4 {
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-family: $poppins;
+                line-height: 16px;
+                color: $color-white;
+                margin-bottom: 4px;
+                @media #{$small-mobile}{
+                    font-size: 16px;
+                }
+            }
+            & span {
+                color: $color-white;
+                display: block;
+                font-size: 13px;
+                line-height: 20px;
+                @media #{$small-mobile}{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

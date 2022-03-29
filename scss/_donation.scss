@@ -1,0 +1,215 @@
+/*----------------------------------------*/
+/*  7.  Donation Area
+/*----------------------------------------*/
+.donation-area {}
+/*-- Donation Title --*/
+.donation-title {
+    background-color: $theme-color;
+    padding: 43px 30px 41px;
+    margin: 0 70px -80px;
+    position: relative;
+    z-index: 9;
+    @media #{$large-mobile}{
+        margin: 0;
+        padding: 30px;
+    }
+    @media #{$small-mobile}{
+        padding: 20px;
+    }
+    & h3 {
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 22px;
+        margin-bottom: 3px;
+        @media #{$tablet-device}{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        @media #{$large-mobile}{
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    }
+    & h1 {
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 36px;
+        margin-bottom: 0;
+        @media #{$tablet-device}{
+            font-size: 24px;
+        }
+        @media #{$large-mobile}{
+            font-size: 16px;
+        }
+    }
+}
+.donation-title-2 {
+    position: relative;
+	margin-bottom: 30px;
+    & h3 {
+        text-transform: uppercase;
+        font-size: 22px;
+        margin-bottom: 3px;
+        @media #{$tablet-device}{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        @media #{$large-mobile}{
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    }
+    & h1 {
+        text-transform: uppercase;
+        font-size: 36px;
+        margin-bottom: 0;
+        @media #{$tablet-device}{
+            font-size: 24px;
+        }
+        @media #{$large-mobile}{
+            font-size: 16px;
+        }
+    }
+}
+/*-- Donation Form --*/
+.donation-form {
+    width: 100%;
+    float: left;
+    padding: 136px 70px 34px;
+    background-color: #f5f5f5;
+    @media #{$tablet-device}{
+        padding: 126px 50px 28px;
+    }
+    @media #{$large-mobile}{
+        padding: 50px 50px 28px;
+    }
+    @media #{$small-mobile}{
+        padding: 30px 30px 8px;
+    }
+}
+
+#donation-form {
+    margin: 0 -14px;
+    & .input-box {
+        width: 100%;
+        padding: 0 14px;
+        float: left;
+        margin-bottom: 22px;
+        &.input-3 {
+            width: 33.3333%;
+            @media #{$tablet-device}{
+                width: 50%;
+            }
+            @media #{$large-mobile}{
+                 width: 100%;
+            }
+        }
+        & input {
+            width: 100%;
+            background-color: $color-white;
+            border: none;
+            font-size: 12px;
+            color: $text-color;
+            height: 44px;
+            line-height: 24px;
+            padding: 10px 20px;
+            &:focus {
+                box-shadow: 0 4px 10px rgba(#000, 0.04);
+            }
+            &[type="submit"] {
+                width: auto;
+                padding: 10px 50px;
+                background-color: $theme-color;
+                color: $color-white;
+                font-size: 13px;
+                text-transform: uppercase;
+                @media #{$large-mobile}{
+                    width: 100%;
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+                &:hover {
+                    background-color: lighten($theme-color, 5);
+                }
+            }
+        }
+        & select {
+            -webkit-appearance:none;
+            -moz-appearance:none;
+            -ms-appearance:none;
+            appearance:none;
+            background-image: url(img/icon/caret-down.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-color: $color-white;
+            border: none;
+            font-size: 12px;
+            color: $text-color;
+            height: 44px;
+            line-height: 24px;
+            padding: 10px 20px;
+            width: 99.9%;
+            &:focus {
+                box-shadow: 0 4px 10px rgba(#000, 0.04);
+            }
+            & option {
+                padding: 5px 20px;
+            }
+        }
+    }
+}
+#donation-form-2 {
+	& input {
+		width: 100%;
+		background-color: $color-white;
+		border: none;
+		font-size: 12px;
+		color: $text-color;
+		height: 44px;
+		line-height: 24px;
+		padding: 10px 20px;
+		&:focus {
+			box-shadow: 0 4px 10px rgba(#000, 0.04);
+		}
+		&[type="submit"] {
+			padding: 10px 50px;
+			background-color: $theme-color;
+			color: $color-white;
+			font-size: 13px;
+			text-transform: uppercase;
+			@media #{$large-mobile}{
+				width: 100%;
+			}
+			&:focus {
+				box-shadow: none;
+			}
+			&:hover {
+				background-color: lighten($theme-color, 5);
+			}
+		}
+	}
+	& select {
+		-webkit-appearance:none;
+		-moz-appearance:none;
+		-ms-appearance:none;
+		appearance:none;
+		background-image: url(img/icon/caret-down.png);
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-color: $color-white;
+		border: none;
+		font-size: 12px;
+		color: $text-color;
+		height: 44px;
+		line-height: 24px;
+		padding: 10px 20px;
+		width: 99.9%;
+		&:focus {
+			box-shadow: 0 4px 10px rgba(#000, 0.04);
+		}
+		& option {
+			padding: 5px 20px;
+		}
+	}
+}
