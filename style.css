@@ -2096,18 +2096,19 @@ a.meanmenu-reveal i {
     font-size: 14px;
   }
 }
-.about-content-2 .button {
+.header-blog,.about-content-2 .button {
   padding: 9px 47px;
   height: 46px;
   line-height: 24px;
+  font-weight: bold;
   display: inline-block;
   border: 2px solid #6ab43e;
-  border-radius: 4px;
+  border-radius: 25px;
   background-color: #6ab43e;
   color: #ffffff;
   text-transform: uppercase;
-  margin-top: 10px;
-  margin-right: 18px;
+  margin-top: 30px;
+  margin-left: 18px;
 }
 .about-content-2 .button:last-child {
   margin-right: 0;
