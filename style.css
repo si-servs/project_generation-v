@@ -23,6 +23,9 @@
 	18.    Footer Area
 	19.    Our Team
 	20.    Session-area
+  21.    Help Area
+  22.    FAQ Area
+  23.    Offer Area
 
 -----------------------------------------------------------------------------------*/
 /*----------------------------------------*/
@@ -694,21 +697,25 @@ ul {
 /*-- Input Placeholder --*/
 input:-moz-placeholder, textarea:-moz-placeholder, select:-moz-placeholder {
   opacity: 1;
+  color: #7575755e;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
   opacity: 1;
+  color: #7575755e;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
   opacity: 1;
+  color: #7575755e;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
   opacity: 1;
+  color: #7575755e;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
@@ -959,7 +966,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
 }
 
 hr{
-  color: #34482F;
+  color: #34482f5c;
+  width: 90% !important; 
+  height: 3px !important;
 }
 /*----------------------------------------*/
 /*  2.  Header Area
@@ -1818,6 +1827,7 @@ a.meanmenu-reveal i {
 .about-area {
   position: relative;
   overflow: hidden;
+  padding-inline: 30px;
 }
 
 /*-- About Image --*/
@@ -2048,7 +2058,7 @@ a.meanmenu-reveal i {
 /*-- About Content 2 --*/
 .about-content-2 {
   padding-left: 55px;
-  padding-right: 85px;
+  padding-right: 53px;
   margin: auto;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2129,7 +2139,6 @@ a.meanmenu-reveal i {
   margin-top: 35px;
   text-align: center;
   line-height: 32px;
-}
 }
 @media only screen and (max-width: 479px) {
   .about-content-2 p {
@@ -2605,13 +2614,14 @@ a.meanmenu-reveal i {
 }
 
 #donation-form-2 input {
+  font-family: 'HKGrotesk-Regular';
   width: 100%;
   background-color: #ffffff;
   border: none;
-  font-size: 12px;
+  font-size: 32px;
   color: #757575;
-  height: 40px;
-  line-height: 24px;
+  height: 60px;
+  line-height: 30px;
   padding: 10px 20px;
   border-radius: 50px;
 }
@@ -2627,6 +2637,12 @@ a.meanmenu-reveal i {
   border-radius: 20px;
   height: 120px;
 }
+
+#donation-form-2 input[type=button]:hover, #donation-form-2 input[type=button]:focus{
+  background-color: #5d9650;
+  color: #ffffff;
+}
+
 #donation-form-2 input:focus {
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
@@ -2635,8 +2651,8 @@ a.meanmenu-reveal i {
   padding: 10px 0px;
   background-color: #5d9650;
   color: #ffffff;
-  font-family: "Fraunces-Regular";
-  font-size: 16px;
+  font-family: "HKGrotesk-semibold";
+  font-size: 30px;
 }
 @media only screen and (max-width: 767px) {
   #donation-form-2 input[type=submit] {
@@ -4503,3 +4519,93 @@ a.meanmenu-reveal i {
   text-align: center;
   font-family: "Fraunces-Regular";
 }
+
+
+/*----------------------------------------*/
+/*  21.  Help Area
+/*----------------------------------------*/
+.help-area {
+  background-color: #5d96503b;
+  color: #34482fe6;
+}
+.help-area h3{
+  font-family: 'Fraunces-Regular';
+  font-size: 38px;  
+}
+
+.help-area span {
+  font-family: "HKGrotesk-Regular";
+  font-size: 17px;
+}
+.help-area input {
+  width: 65%;
+  background-color: #ffffff;
+  border: none;
+  font-size: 17px;
+  color: #757575;
+  height: 70px;
+  line-height: 24px;
+  padding: 10px 50px;
+  border-radius: 50px;
+  margin: 25px;
+}
+
+
+
+/*----------------------------------------*/
+/*  22.  FAQ Area
+/*----------------------------------------*/
+.faq-content{
+  padding: 10px 50px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.faq-content h2{
+  font-family: "HKGrotesk-semibold";
+  margin-bottom: 30px;
+}
+
+.faq-content h3{
+  font-family: "HKGrotesk-light";
+  color: #5d9650;
+  font-weight: 400;
+}
+.faq-content p{
+  font-family: "HKGrotesk-light";
+  color: #34482fbd;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+
+
+/*----------------------------------------*/
+/*  23.  Offer Area
+/*----------------------------------------*/
+.about-area h3{
+  font-family: "fraunces-Bold";
+}
+.about-area p{
+  font-family: "HKGrotesk-light";
+  font-size: 20px;
+  font-weight: 300;
+  color: #34482F;
+  margin-bottom: 22px;
+  margin-top: 22px;
+  line-height: 26px;
+  text-align: start;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.offer-area .section-title p {
+    max-width: 1000px;
+    font-family: "MyriadPro-Regular";
+    font-size: 22px;
+    color: #34482F;
+    line-height: 35px;
+    display: block;
+    margin: 35px auto 0;
+  }
+
+
