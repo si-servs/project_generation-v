@@ -973,6 +973,13 @@ hr{
 .float-none{
   float: none !important;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+.height-600{
+  height: 600px !important;
+}
 /*----------------------------------------*/
 /*  2.  Header Area
 /*----------------------------------------*/
@@ -2623,10 +2630,17 @@ a.meanmenu-reveal i {
   border: none;
   font-size: 32px;
   color: #757575;
-  height: 60px;
+  height: 65px;
   line-height: 30px;
   padding: 10px 20px;
   border-radius: 50px;
+}
+#donation-form-2 input[type=number] {
+  border: solid 1px #000000;
+  border-radius: 10px;
+  height: 40px;
+  margin-top: 10px;
+  padding: 10px 0px 10px 10px;
 }
 #donation-form-2 textarea {
   width: 100%;
