@@ -21,6 +21,8 @@
 	16.    Blog Area
 	17.    Contact Area
 	18.    Footer Area
+	19.    Our Team
+	20.    Session-area
 
 -----------------------------------------------------------------------------------*/
 /*----------------------------------------*/
@@ -35,7 +37,7 @@ html, body {
 
 body {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   visibility: visible;
@@ -44,10 +46,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #424242;
+  color: #34482F;
   font-weight: 700;
   margin-top: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "HKGrotesk-Bold";
 }
 
 p:last-child {
@@ -59,7 +61,7 @@ a, button {
   display: inline-block;
   line-height: inherit;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Fraunces-Regular";
 }
 
 input, select, textarea {
@@ -117,6 +119,16 @@ ul {
   background-color: #f1f2f3 !important;
 }
 
+.bg-green-light {
+  background-color: #5d96505c !important;
+}
+
+.bg-form{
+  background-color: #5d96505c !important;
+  padding: 50px 100px;
+  border-radius: 50px;
+}
+
 /*-- Custom Row --*/
 .row-5 {
   margin-left: -5px;
@@ -156,22 +168,22 @@ ul {
   right: 0;
   bottom: 0;
   content: "";
-  background-color: #6ab43e;
+  /*background-color: #6ab43e;*/
   opacity: 0.8;
   z-index: -1;
 }
-.overlay.gradient::before {
-  background: #6ab43e;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #6ab43e), color-stop(100%, #000000));
-  background: -webkit-gradient(linear, left top, right top, from(#6ab43e), to(#000000));
-  background: linear-gradient(to right, #6ab43e 0%, #000000 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$theme-color", endColorstr="$color-black", GradientType=1 );
-}
+/*.overlay.gradient::before {*/
+/*  background: #6ab43e;*/
+/*  background: -webkit-gradient(left top, right top, color-stop(0%, #6ab43e), color-stop(100%, #000000));*/
+/*  background: -webkit-gradient(linear, left top, right top, from(#6ab43e), to(#000000));*/
+/*  background: linear-gradient(to right, #6ab43e 0%, #000000 100%);*/
+/*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$theme-color", endColorstr="$color-black", GradientType=1 );*/
+/*}*/
 
 /* Addition media query */
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1400px;
     --bs-gutter-x: 15px;
   }
 
@@ -425,6 +437,18 @@ ul {
   margin-bottom: 150px;
 }
 
+/*-- Margin Left --*/
+.ml-15 {
+  margin-left: 15px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.m-auto{
+  margin: auto;
+}
 /*-- Padding Top --*/
 .pt-5 {
   padding-top: 5px;
@@ -739,10 +763,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   }
 }
 .section-title h2 {
-  font-size: 36px;
+  font-family: "Fraunces-Bold";
+  font-size: 52px;
   line-height: 26px;
   font-weight: 800;
-  text-transform: uppercase;
   margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -767,10 +791,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   color: #ffffff;
 }
 .section-title p {
-  max-width: 800px;
-  font-size: 16px;
-  color: #616161;
-  line-height: 23px;
+  max-width: 1000px;
+  font-family: "HKGrotesk-Regular";
+  font-size: 28px;
+  color: #34482F;
+  line-height: 40px;
   display: block;
   margin: 35px auto 0;
 }
@@ -798,9 +823,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
 
 /*-- Page Banner Area --*/
 .page-banner-area {
-  background-image: url(img/bg/page-banner.jpg);
+  background-image: url(img/bg/aboutus1.jpg);
   padding: 140px 0 133px;
   z-index: 1;
+}
+.page-banner-area .row{
+  float: right;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .page-banner-area {
@@ -930,6 +958,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   padding-right: 15px;
 }
 
+hr{
+  color: #34482F;
+}
 /*----------------------------------------*/
 /*  2.  Header Area
 /*----------------------------------------*/
@@ -1359,6 +1390,7 @@ a.meanmenu-reveal i {
   display: table-cell;
   height: 100%;
   vertical-align: middle;
+  float: right;
 }
 
 /*-- Hero Style For BG Image & Video --*/
@@ -1509,13 +1541,14 @@ a.meanmenu-reveal i {
 
 .hero-content-2 {
   text-align: center;
+  margin-top: 150px;
 }
 .hero-content-2 h1 {
-  font-size: 80px;
+  font-family: "Fraunces-bold";
+  font-size: 60px;
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 25px;
-  text-transform: uppercase;
   color: #ffffff;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1538,12 +1571,13 @@ a.meanmenu-reveal i {
   }
 }
 .hero-content-2 p {
-  font-size: 18px;
+  font-family: "HKGrotesk-Regular";
+  font-size: 27px;
   font-weight: 300;
   line-height: 28px;
   max-width: 810px;
   margin: 0 auto 45px;
-  padding: 0;
+  padding: 0 50px;
   color: #ffffff;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2015,7 +2049,7 @@ a.meanmenu-reveal i {
 .about-content-2 {
   padding-left: 55px;
   padding-right: 85px;
-  margin-top: -10px;
+  margin: auto;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-content-2 {
@@ -2037,10 +2071,11 @@ a.meanmenu-reveal i {
   }
 }
 .about-content-2 h2 {
-  color: #424242;
-  font-size: 30px;
-  line-height: 40px;
-  font-weight: 400;
+  font-family: "Fraunces-Bold";
+  font-size: 40px;
+  text-align: center;
+  line-height: 26px;
+  font-weight: 800;
   margin-bottom: 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2086,28 +2121,33 @@ a.meanmenu-reveal i {
   }
 }
 .about-content-2 p {
-  font-size: 16px;
+  font-family: "HKGrotesk-Regular";
+  font-size: 30px;
   font-weight: 300;
-  color: #7f7f7f;
+  color: #34482F;
   margin-bottom: 22px;
+  margin-top: 35px;
+  text-align: center;
+  line-height: 32px;
+}
 }
 @media only screen and (max-width: 479px) {
   .about-content-2 p {
     font-size: 14px;
   }
 }
-.header-blog,.about-content-2 .button {
-  padding: 9px 47px;
-  height: 46px;
+.header-blog,.img-button,.about-content-2 .button {
+  padding: 7px 15px;
+  height: 40px;
   line-height: 24px;
+  font-family: "Fraunces-Regular";
   font-weight: bold;
   display: inline-block;
-  border: 2px solid #6ab43e;
+  border: 2px solid #5D9650;
   border-radius: 25px;
-  background-color: #6ab43e;
+  background-color: #5D9650;
   color: #ffffff;
-  text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 35px;
   margin-left: 18px;
 }
 .about-content-2 .button:last-child {
@@ -2137,7 +2177,15 @@ a.meanmenu-reveal i {
   background-color: transparent;
   color: #6ab43e;
 }
-
+.header-blog:hover, .button:hover{
+  border-color: #6ab43e;
+  background-color: transparent;
+  color: #6ab43e;
+}
+.order-lg-2 .button{
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+}
 /*----------------------------------------*/
 /*  6.  Project Area
 /*----------------------------------------*/
@@ -2448,7 +2496,10 @@ a.meanmenu-reveal i {
     font-size: 16px;
   }
 }
-
+.donation-area h1{
+  font-family: "Fraunces-Bold";
+  font-size: 61px;
+}
 /*-- Donation Form --*/
 .donation-form {
   width: 100%;
@@ -2559,20 +2610,33 @@ a.meanmenu-reveal i {
   border: none;
   font-size: 12px;
   color: #757575;
+  height: 40px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+#donation-form-2 textarea {
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  font-size: 12px;
+  color: #757575;
   height: 44px;
   line-height: 24px;
   padding: 10px 20px;
+  border-radius: 20px;
+  height: 120px;
 }
 #donation-form-2 input:focus {
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
 }
 #donation-form-2 input[type=submit] {
-  padding: 10px 50px;
-  background-color: #6ab43e;
+  padding: 10px 0px;
+  background-color: #5d9650;
   color: #ffffff;
-  font-size: 13px;
-  text-transform: uppercase;
+  font-family: "Fraunces-Regular";
+  font-size: 16px;
 }
 @media only screen and (max-width: 767px) {
   #donation-form-2 input[type=submit] {
@@ -2848,7 +2912,6 @@ a.meanmenu-reveal i {
   display: inline-block;
   width: 230px;
   border-radius: 10px;
-  background-color: #f5f5f5;
   padding: 42px 15px;
   margin: 0 16px 20px;
   text-align: center;
@@ -2928,12 +2991,11 @@ a.meanmenu-reveal i {
   }
 }
 .single-fact p {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: #9b9b9a;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "HKGrotesk-Regular";
+  color: #34482F;
   line-height: 12px;
-  text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single-fact p {
@@ -2947,72 +3009,84 @@ a.meanmenu-reveal i {
 }
 
 /*----------------------------------------*/
-/*  10.  Video Area
+/*  10.  Image Area
 /*----------------------------------------*/
-.video-area {
-  background-image: url(img/bg/video.jpg);
+.image-area {
+  background-image: url(img/bg/bg-img1.jpg);
+}
+.image-area .container .row{
+  float: right;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .video-area {
+  .image-area {
     padding: 120px 0;
   }
 }
 @media only screen and (max-width: 767px) {
-  .video-area {
+  .image-area {
     padding: 120px 0;
   }
 }
 
 /*-- Video Wrapper --*/
-.video-wrapper h1 {
-  font-size: 36px;
+.image-wrapper h1 {
+  font-family: "Fraunces-Regular";
+  font-size: 40px;
   font-weight: 800;
-  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+.image-wrapper h2 {
+  font-family: "HKGrotesk-Regular";
+  font-size: 30px;
+  font-weight: 800;
   margin-bottom: 0;
   color: #ffffff;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .video-wrapper h1 {
+  .image-wrapper h1 {
     font-size: 30px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .video-wrapper h1 {
+  .image-wrapper h1 {
     font-size: 20px;
   }
 }
-.video-wrapper p {
-  max-width: 800px;
-  font-size: 16px;
+.image-wrapper p {
+  max-width: 550px;
+  font-family: "HKGrotesk-Regular";
+  font-size: 21px;
   color: #ffffff;
-  line-height: 23px;
+  line-height: 30px;
   display: block;
   margin: 14px auto 25px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .video-wrapper p {
+  .image-wrapper p {
     font-size: 14px;
     margin: 10px auto 20px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .video-wrapper p {
+  .image-wrapper p {
     font-size: 14px;
     margin: 10px auto 20px;
   }
 }
-.video-wrapper a {
+.image-wrapper a {
   margin: 0 auto;
   display: inline-block;
   color: #ffffff;
+  font-size: 18px;
 }
-.video-wrapper a i {
+.image-wrapper a i {
   display: block;
   font-size: 80px;
   line-height: 67px;
 }
 @media only screen and (max-width: 767px) {
-  .video-wrapper a i {
+  .image-wrapper a i {
     font-size: 60px;
     line-height: 51px;
   }
@@ -3023,17 +3097,18 @@ a.meanmenu-reveal i {
 /*----------------------------------------*/
 /*-- Event List --*/
 .event-list {
-  background-color: #f5f5f5;
+  background-color: #5d96500f;
   margin-bottom: 15px;
+  border-radius: 15px;
 }
-.event-list:last-child {
-  margin-bottom: 0;
-}
+/*.event-list:last-child {*/
+/*  margin-bottom: 0;*/
+/*}*/
 .event-list .date {
-  border-right: 2px solid #ffffff;
-  width: 114px;
+  /*border-right: 2px solid #ffffff;*/
+  width: 100px;
   text-align: center;
-  padding: 29px 15px 25px;
+  padding: 18px 15px;
   margin-right: -2px;
 }
 @media only screen and (max-width: 479px) {
@@ -3069,7 +3144,7 @@ a.meanmenu-reveal i {
   color: #6ab43e;
 }
 .event-list .content {
-  border-left: 2px solid #ffffff;
+  /*border-left: 2px solid #ffffff;*/
   padding: 17px 24px 15px;
 }
 @media only screen and (max-width: 479px) {
@@ -3090,8 +3165,11 @@ a.meanmenu-reveal i {
   color: #6ab43e;
 }
 .event-list .content p {
+  font-family: "HKGrotesk-Regular";
   line-height: 22px;
   font-weight: 300;
+  font-size: 17px;
+
 }
 
 /*-- Event Tab List --*/
@@ -3318,91 +3396,101 @@ a.meanmenu-reveal i {
 /*  14.  Volunteer Area
 /*----------------------------------------*/
 .volunteer-area {
-  background-color: #373737;
+  background-color: #34482F;
 }
 
 /*-- Single Volunteer --*/
 .single-volunteer .image img {
-  width: 100%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
 }
 .single-volunteer .content {
   padding-top: 34px;
 }
 .single-volunteer .content h4 {
-  font-size: 18px;
-  text-transform: uppercase;
+  font-family: "Fraunces-SemiBold";
+  font-size: 16px;
   color: #ffffff;
-  font-weight: 600;
   line-height: 14px;
 }
+.single-volunteer .content h2 {
+  font-family: "Fraunces-SemiBold";
+  font-size: 22px;
+  color: #ffffff;
+  margin-top: 100px;
+}
 .single-volunteer .content span {
-  color: #6ab43e;
+  color: #ffffff;
   font-size: 12px;
   line-height: 12px;
   display: block;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "HKGrotesk-Regular";
   margin-bottom: 12px;
 }
 .single-volunteer .content p {
+  font-family: "HKGrotesk-Regular";
+  max-width: 730px;
   color: #bcbcbc;
   font-weight: 300;
   line-height: 22px;
+  margin: auto;
 }
-
+.bg-white{
+  background-color: #FFFFFF;
+}
+.bg-white h2,.bg-white h4,.bg-white span,.bg-white p{
+  color: #34482F !important;
+}
 /*----------------------------------------*/
 /*  15.  Testimonial Area
 /*----------------------------------------*/
 .testimonial-area {
-  background-image: url(img/bg/testimonial.jpg);
+  background-color: #5d96503b;
 }
 
 /*-- Testimonial Slider --*/
 /*-- Single Testimonial --*/
 .single-testimonial .content {
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 38px 30px 40px 30px;
+  background-color: #FFFFFF;
+  padding: 120px 30px 40px 30px;
   margin-bottom: 32px;
   position: relative;
-}
-.single-testimonial .content::before {
-  position: absolute;
-  left: 30px;
-  top: 100%;
-  content: "";
-  border-left: 14px solid transparent;
-  border-right: 14px solid transparent;
-  border-top: 18px solid rgba(0, 0, 0, 0.1);
+  border-radius: 35px;
 }
 .single-testimonial .content p {
-  color: #ffffff;
+  text-align: justify;
+  color: #34482F;
   font-weight: 300;
   line-height: 22px;
 }
 .single-testimonial .author {
   margin-left: 9px;
 }
-.single-testimonial .author img {
-  float: left;
-  width: 70px;
-  height: 70px;
+.single-testimonial img {
+  position: relative;
+  top: 100px;
+  width: 150px;
+  height: 150px;
   padding: 2px;
   background-color: #ffffff;
-  margin-right: 20px;
+  margin: auto;
   border-radius: 50%;
   overflow: hidden;
+  z-index: 1;
 }
 .single-testimonial .author .details {
   margin-top: 16px;
 }
-.single-testimonial .author .details h4 {
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+.single-testimonial h4 {
+  text-align: center;
+  font-size: 24px;
+  font-family: "HKGrotesk-Bold";
   line-height: 16px;
-  color: #ffffff;
-  margin-bottom: 4px;
+  color: #34482F;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 @media only screen and (max-width: 479px) {
   .single-testimonial .author .details h4 {
@@ -3420,7 +3508,20 @@ a.meanmenu-reveal i {
     font-size: 12px;
   }
 }
-
+.slider-next{
+  position: relative;
+  left: 1500px;
+  top: 300px;
+  font-size: 50px;
+  color: #ffffff;
+}
+.slider-prev{
+  position: absolute;
+  top: 300px;
+  left: -125px;
+  font-size: 50px;
+  color: #ffffff;
+}
 /*----------------------------------------*/
 /*  16.  Blog Area
 /*----------------------------------------*/
@@ -4103,7 +4204,42 @@ a.meanmenu-reveal i {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
-
+ .contact-title{
+   text-align: center;
+   font-family: "HKGrotesk-Regular";
+   font-size: 64px;
+   line-height: 75px;
+   color: #5D9650;
+ }
+ .contact-radio{
+   border: solid 2px #5D9650;
+   border-radius: 35px;
+   font-size: 37px;
+   color: #5D9650;
+   padding: 20px;
+   max-width: 300px;
+   text-align: left;
+ }
+ .contact-radio input[type=radio]{
+   width: 25px;
+   height: 25px;
+   margin-right: 25px;
+ }
+ .contact-location select{
+   width: 100%;
+   height: 69px;
+   border: solid 2px #5D9650;
+   border-radius: 35px;
+   padding-left: 50px;
+   font-size: 30px;
+   color: gray;
+ }
+.contact-text textarea{
+  border: solid 2px #5D9650;
+  border-radius: 35px;
+  width: 100%;
+  height: 300px;
+}
 /*----------------------------------------*/
 /*  18.  Footer Area
 /*----------------------------------------*/
@@ -4137,7 +4273,12 @@ a.meanmenu-reveal i {
   width: 132px;
   background-color: #898989;
 }
-
+.footer-title{
+  color: #34482F;
+}
+.footer-text{
+  color: #5D9650;
+}
 /*-- About Widget --*/
 .about-widget img {
   margin-bottom: 18px;
@@ -4166,16 +4307,15 @@ a.meanmenu-reveal i {
 }
 .footer-social a {
   display: inline-block;
-  margin-right: 24px;
-  color: #b7b7b7;
+  margin-right: 10px;
+  color: #5D9650;
 }
 .footer-social a:hover {
-  color: #6ab43e;
+  color: #5d96505c;
 }
 .footer-social a i {
   display: block;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 25px;
 }
 
 /*-- News Widget --*/
@@ -4305,7 +4445,6 @@ a.meanmenu-reveal i {
 
 /*-- Footer Bottom Area --*/
 .footer-bottom-area {
-  background-color: #262626;
   padding: 10px 0;
   /*-- Copyright --*/
 }
@@ -4333,4 +4472,34 @@ a.meanmenu-reveal i {
 }
 .footer-bottom-area .copyright p a:hover {
   color: #6ab43e;
+}
+/*----------------------------------------*/
+/*  19.  Our team
+/*----------------------------------------*/
+
+.ourteam-area h3{
+  font-family: "HKGrotesk-Light";
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+.ourteam-area p{
+  font-family: "HKGrotesk-LightItalic";
+  font-size: 24px;
+  color: #34482F;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.ourteam-area span{
+  font-family: "HKGrotesk-SemiBold";
+  font-size: 20px;
+  color: #34482F;
+}
+/*----------------------------------------*/
+/*  20.  Session-area
+/*----------------------------------------*/
+.Session-area h1{
+  text-align: center;
+  font-family: "Fraunces-Regular";
 }

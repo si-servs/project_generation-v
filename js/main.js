@@ -79,8 +79,8 @@ $('.client-slider').slick({
 	Testimonial Slider
 -----------------------------------*/
 $('.testimonial-slider').slick({
-    arrows: false,
-    infinite: true,
+    prevArrow: "<i class=\"fa fa-caret-right slider-next\"></i>",
+    nextArrow: "<i class=\"fa fa-caret-left slider-prev\"></i>",
     swipeToSlide: true,
     slidesToShow: 3,
     responsive: [
