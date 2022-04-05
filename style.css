@@ -970,6 +970,9 @@ hr{
   width: 90% !important; 
   height: 3px !important;
 }
+.float-none{
+  float: none !important;
+}
 /*----------------------------------------*/
 /*  2.  Header Area
 /*----------------------------------------*/
@@ -4519,7 +4522,19 @@ a.meanmenu-reveal i {
   text-align: center;
   font-family: "Fraunces-Regular";
 }
+.Session-area h3{
+  text-align: center;
+  font-family: 'HKGrotesk-Regular';
+  color: #757575;
+  font-size: 32px;
+  font-weight: 200;
+}
 
+.session-nb {
+  background-color: white;
+  border-radius: 50px;
+  font-size: 32px;
+}
 
 /*----------------------------------------*/
 /*  21.  Help Area
