@@ -4230,11 +4230,14 @@ a.meanmenu-reveal i {
  .contact-radio{
    border: solid 2px #5D9650;
    border-radius: 35px;
-   font-size: 37px;
+   font-size: 32px;
    color: #5D9650;
    padding: 20px;
    max-width: 300px;
    text-align: left;
+ }
+ .mw-500{
+   max-width: 500px !important;
  }
  .contact-radio input[type=radio]{
    width: 25px;
@@ -4251,10 +4254,55 @@ a.meanmenu-reveal i {
    color: gray;
  }
 .contact-text textarea{
+  font-family: "HKGrotesk-Regular";
   border: solid 2px #5D9650;
   border-radius: 35px;
-  width: 100%;
+  width: 800px;
   height: 300px;
+  padding: 50px;
+  font-size: 30px;
+}
+.contact-about{
+  border: solid 2px #5D9650;
+  border-radius: 35px;
+  width: 800px;
+  margin: 60px auto;
+  padding: 50px;
+}
+.contact-about h1{
+  font-family: "HKGrotesk-Regular";
+  color: #5D9650;
+  margin-bottom: 30px;
+}
+.contact-about label{
+  font-family: "HKGrotesk-Regular";
+  color: #34482F;
+  font-size: 25px;
+}
+.contact-about input[type="text"]{
+  font-family: 'HKGrotesk-Regular';
+  width: 100%;
+  background-color: #ffffff;
+  border: solid 2px #5D9650;
+  font-size: 32px;
+  color: #757575;
+  height: 60px;
+  line-height: 30px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin: 15px 0;
+}
+.contact-button input[type="submit"]{
+  padding: 10px 0px;
+  background-color: #5d9650;
+  color: #ffffff;
+  font-family: "HKGrotesk-semibold";
+  font-size: 30px;
+  height: 60px;
+  line-height: 30px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: solid 2px #5d9650;
 }
 /*----------------------------------------*/
 /*  18.  Footer Area
