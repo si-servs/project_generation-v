@@ -2630,6 +2630,18 @@ a.meanmenu-reveal i {
   border: none;
   font-size: 32px;
   color: #757575;
+  height: 40px;
+  line-height: 30px;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+#donation-form-2 button {
+  font-family: 'HKGrotesk-Regular';
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  font-size: 32px;
+  color: #757575;
   height: 65px;
   line-height: 30px;
   padding: 10px 20px;
@@ -2655,7 +2667,7 @@ a.meanmenu-reveal i {
   height: 120px;
 }
 
-#donation-form-2 input[type=button]:hover, #donation-form-2 input[type=button]:focus{
+#donation-form-2 button:hover, #donation-form-2 button:focus{
   background-color: #5d9650;
   color: #ffffff;
 }
@@ -2665,7 +2677,7 @@ a.meanmenu-reveal i {
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
 }
 #donation-form-2 input[type=submit] {
-  padding: 10px 0px;
+  padding: 5px 0px;
   background-color: #5d9650;
   color: #ffffff;
   font-family: "HKGrotesk-semibold";
@@ -2707,7 +2719,10 @@ a.meanmenu-reveal i {
 #donation-form-2 select option {
   padding: 5px 20px;
 }
-
+.btn-book{
+  font-family: "HKGrotesk-Regular" !important;
+  font-size: 22px !important;
+}
 /*----------------------------------------*/
 /*  8.  Causes Area
 /*----------------------------------------*/
@@ -4260,6 +4275,7 @@ a.meanmenu-reveal i {
    width: 25px;
    height: 25px;
    margin-right: 25px;
+   accent-color: #5D9650;
  }
  .contact-location select{
    width: 100%;
@@ -4320,6 +4336,27 @@ a.meanmenu-reveal i {
   padding: 10px 20px;
   border-radius: 50px;
   border: solid 2px #5d9650;
+}
+.contact-banner{
+  height: 700px;
+  padding-top: 245px;
+}
+.contact-banner h1{
+  font-family: "Fraunces-Regular";
+  color: #FFFFFF;
+}
+.contact-banner p{
+  font-family: "Fraunces-Regular";
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 30px;
+}
+.contact-banner-footer{
+  background-color: #5d9650;
+  height: 50px;
 }
 /*----------------------------------------*/
 /*  18.  Footer Area
