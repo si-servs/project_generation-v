@@ -46,11 +46,11 @@
                     <div id="main-menu" class="main-menu col-auto d-none d-lg-block">
                         <nav>
                             <ul>
-                                <li><a href="index.html">home</a></li>
-                                <li><a href="about.html">about us</a></li>
-                                <li><a href="whatweoffer.html">what we offer</a></li>
-                                <li><a href="faq.html">faq</a></li>
-                                <li><a href="contact.html">contact us</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="whatweoffer.html">What we offer</a></li>
+                                <li class="active"><a href="faq.html">FAQ</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -90,22 +90,22 @@
             <!--  About Content  -->
             <div class="faq-content col-lg-7 col-12">
                 <h2>Frequently Asked Questions</h2>
-                <h3>1-What is Generation V?</h3>
-                <p>We are the answer for Holistic Elderly Companionship Services. A platform 
+                <h3 onclick="tans(1)">1-What is Generation V?</h3>
+                <p class="answer1">We are the answer for Holistic Elderly Companionship Services. A platform
                     designed to play a highly supportive role in the mental and physical well-being of (your loved ones). We match companions based on the individual 
                     needs of your family, creating a highly personalized experience.</p>
-                <h3>2-How does the program work?</h3>
-                <p>We schedule a call to discuss the needs of your loved ones, after which your 
+                <h3 onclick="tans(2)">2-How does the program work?</h3>
+                <p class="answer2">We schedule a call to discuss the needs of your loved ones, after which your
                     loved is matched with a companion and then enrolled in their first session.</p>
-                <h3>3-What makes Generation V unique?</h3>
-                <p>neration V brings a distinct oering to the Middle East, we focus our organization on an often-forgotten segment of the market. Our mission is to break 
+                <h3 onclick="tans(3)">3-What makes Generation V unique?</h3>
+                <p class="answer3">neration V brings a distinct oering to the Middle East, we focus our organization on an often-forgotten segment of the market. Our mission is to break
                     the stigma of aging and bring the needs of the elderly to the forefront.</p>
-                <h3>4-What is the process for companion matching?</h3>
-                <p>We are focused on find the right fit for your loved ones, each companion is 
+                <h3 onclick="tans(4)">4-What is the process for companion matching?</h3>
+                <p class="answer4">We are focused on find the right fit for your loved ones, each companion is
                     thoroughly screened to ensure they are qualified, caring and knowledgeable. 
                     We recommend a minimum of 3 sessions with a companion, and we then conduct a mandatory evaluation and review of the rapport that has been built</p>
-                <h3>5-Do you provide medical services?</h3>
-                <p>Generation V is focused on providing non-medical services. Our services are 
+                <h3 onclick="tans(5)">5-Do you provide medical services?</h3>
+                <p class="answer5">Generation V is focused on providing non-medical services. Our services are
                     focused on breaking down the negative attitudes that an older person may 
                     face such as: prejudices, ageism, and popular stereotypes. Best of all, companions can keep elderly loved ones emotionally healthy, and help to relieve 
                     the stress placed on family members trying to provide care on their own. If 
@@ -191,7 +191,12 @@
 <!-- Main JS
 ============================================ -->
 <script src="js/main.js"></script>
-
+<script>
+    function tans(pos) {
+        var ans = ".answer"+pos;
+        $(ans).toggle();
+    }
+</script>
 </body>
 
 </html>

@@ -64,7 +64,7 @@ a, button {
   display: inline-block;
   line-height: inherit;
   text-decoration: none;
-  font-family: "Fraunces-Regular";
+  font-family: "Fraunces-SemiBold";
 }
 
 input, select, textarea {
@@ -694,6 +694,13 @@ ul {
   padding-bottom: 150px;
 }
 
+.pr-7{
+  padding-right: 7px;
+}
+
+.pl-7{
+  padding-left: 7px;
+}
 /*-- Input Placeholder --*/
 input:-moz-placeholder, textarea:-moz-placeholder, select:-moz-placeholder {
   opacity: 1;
@@ -771,7 +778,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
 }
 .section-title h2 {
   font-family: "Fraunces-Bold";
-  font-size: 52px;
+  font-size: 40px;
   line-height: 26px;
   font-weight: 800;
   margin-bottom: 0;
@@ -798,11 +805,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
   color: #ffffff;
 }
 .section-title p {
-  max-width: 1000px;
+  max-width: 870px;
   font-family: "HKGrotesk-Regular";
-  font-size: 28px;
+  font-size: 23px;
   color: #34482F;
-  line-height: 40px;
+  line-height: 35px;
   display: block;
   margin: 35px auto 0;
 }
@@ -980,6 +987,8 @@ input[type=number]::-webkit-outer-spin-button {
 .height-600{
   height: 600px !important;
 }
+
+
 /*----------------------------------------*/
 /*  2.  Header Area
 /*----------------------------------------*/
@@ -1230,8 +1239,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 14px;
   line-height: 30px;
   font-weight: 500;
-  color: #6b6b6b;
-  text-transform: uppercase;
+  color: #34482F;
   position: relative;
   padding: 40px 0;
 }
@@ -1250,7 +1258,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 10px;
 }
 .main-menu nav > ul > li.active > a, .main-menu nav > ul > li:hover > a {
-  color: #6ab43e;
+  color: #34482F;
 }
 .main-menu nav > ul > li.active > a::before, .main-menu nav > ul > li:hover > a::before {
   width: 28px;
@@ -1778,6 +1786,12 @@ a.meanmenu-reveal i {
 .nivoSlider:hover .nivo-directionNav a.nivo-nextNav {
   margin-right: 0;
 }
+.slider-nav{
+  background-color: #FFFFFF;
+  height: 7px;
+  width: 25px;
+  margin: 0px 3px;
+}
 
 /*----------------------------------------*/
 /*  4.  Service Area
@@ -2150,17 +2164,39 @@ a.meanmenu-reveal i {
   text-align: center;
   line-height: 32px;
 }
+.about-area .about-content-2-p {
+  font-family: "HKGrotesk-Regular";
+  font-size: 30px;
+  font-weight: 300;
+  color: #34482F;
+  margin-bottom: 22px;
+  margin-top: 35px;
+  text-align: center;
+  line-height: 32px;
+}
 @media only screen and (max-width: 479px) {
   .about-content-2 p {
     font-size: 14px;
   }
 }
-.header-blog,.img-button,.about-content-2 .button {
-  padding: 7px 15px;
+.header-blog,.about-content-2 .button {
+  padding: 6px 15px;
   height: 40px;
   line-height: 24px;
-  font-family: "Fraunces-Regular";
-  font-weight: bold;
+  font-family: "HKGrotesk-Regular";
+  display: inline-block;
+  border: 2px solid #5D9650;
+  border-radius: 25px;
+  background-color: #5D9650;
+  color: #ffffff;
+  margin-top: 35px;
+  margin-left: 18px;
+}
+.img-button{
+  padding: 6px 15px;
+  height: 40px;
+  line-height: 24px;
+  font-family: "Fraunces-SemiBold";
   display: inline-block;
   border: 2px solid #5D9650;
   border-radius: 25px;
@@ -2484,9 +2520,13 @@ a.meanmenu-reveal i {
   margin-bottom: 30px;
 }
 .donation-title-2 h3 {
-  text-transform: uppercase;
+  font-family: "HKGrotesk-Regular";
   font-size: 22px;
   margin-bottom: 3px;
+}
+
+.donation-form-2 label {
+  font-family: "HKGrotesk-Regular";
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .donation-title-2 h3 {
@@ -3061,6 +3101,7 @@ a.meanmenu-reveal i {
 /*----------------------------------------*/
 .image-area {
   background-image: url(img/bg/bg-img1.jpg);
+  height: 400px;
 }
 .image-area .container .row{
   float: right;
@@ -3078,16 +3119,15 @@ a.meanmenu-reveal i {
 
 /*-- Video Wrapper --*/
 .image-wrapper h1 {
-  font-family: "Fraunces-Regular";
-  font-size: 40px;
+  font-family: "Fraunces-SemiBold";
+  font-size: 30px;
   font-weight: 800;
   margin-bottom: 0;
   color: #ffffff;
 }
 .image-wrapper h2 {
-  font-family: "HKGrotesk-Regular";
-  font-size: 30px;
-  font-weight: 800;
+  font-family: "Fraunces-SemiBold";
+  font-size: 21px;
   margin-bottom: 0;
   color: #ffffff;
 }
@@ -3102,8 +3142,8 @@ a.meanmenu-reveal i {
   }
 }
 .image-wrapper p {
-  max-width: 550px;
-  font-family: "HKGrotesk-Regular";
+  max-width: 480px;
+  font-family: "MyriadPro-Regular";
   font-size: 21px;
   color: #ffffff;
   line-height: 30px;
@@ -3146,7 +3186,7 @@ a.meanmenu-reveal i {
 /*-- Event List --*/
 .event-list {
   background-color: #5d96500f;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   border-radius: 15px;
 }
 /*.event-list:last-child {*/
@@ -3193,7 +3233,7 @@ a.meanmenu-reveal i {
 }
 .event-list .content {
   /*border-left: 2px solid #ffffff;*/
-  padding: 17px 24px 15px;
+  padding: 17px 5px 15px 0px;
 }
 @media only screen and (max-width: 479px) {
   .event-list .content {
@@ -3216,7 +3256,7 @@ a.meanmenu-reveal i {
   font-family: "HKGrotesk-Regular";
   line-height: 22px;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 15px;
 
 }
 
@@ -3503,9 +3543,11 @@ a.meanmenu-reveal i {
 .single-testimonial .content {
   background-color: #FFFFFF;
   padding: 120px 30px 40px 30px;
-  margin-bottom: 32px;
+  margin: auto;
   position: relative;
   border-radius: 35px;
+  height: 400px;
+  max-width: 350px;
 }
 .single-testimonial .content p {
   text-align: justify;
@@ -3558,15 +3600,15 @@ a.meanmenu-reveal i {
 }
 .slider-next{
   position: relative;
-  left: 1500px;
+  left: 1400px;
   top: 300px;
   font-size: 50px;
   color: #ffffff;
 }
 .slider-prev{
   position: absolute;
+  left: -25px;
   top: 300px;
-  left: -125px;
   font-size: 50px;
   color: #ffffff;
 }
@@ -4685,6 +4727,7 @@ a.meanmenu-reveal i {
   font-weight: 400;
 }
 .faq-content p{
+  display: none;
   font-family: "HKGrotesk-light";
   color: #34482fbd;
   font-size: 20px;
@@ -4711,7 +4754,6 @@ a.meanmenu-reveal i {
   text-align: justify;
   text-justify: inter-word;
 }
-
 .offer-area .section-title p {
     max-width: 1000px;
     font-family: "MyriadPro-Regular";
@@ -4721,5 +4763,12 @@ a.meanmenu-reveal i {
     display: block;
     margin: 35px auto 0;
   }
-
-
+.apt-icon{
+  width: 60px;
+}
+.p-apt-icon{
+  padding: 12px 15px !important;
+}
+.h-65{
+  height: 65px !important;
+}
