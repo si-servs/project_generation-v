@@ -837,7 +837,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
 
 /*-- Page Banner Area --*/
 .page-banner-area {
-  background-image: url(img/bg/aboutus1.jpg);
+  background-image: url(img/bg/aboutusbanner.png);
   padding: 140px 0 133px;
   z-index: 1;
 }
@@ -984,8 +984,8 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   opacity: 1;
 }
-.height-600{
-  height: 600px !important;
+.height-460{
+  height: 460px !important;
 }
 
 
@@ -3100,7 +3100,7 @@ a.meanmenu-reveal i {
 /*  10.  Image Area
 /*----------------------------------------*/
 .image-area {
-  background-image: url(img/bg/bg-img1.jpg);
+  background-image: url(img/bg/toppageimage.png);
   height: 400px;
 }
 .image-area .container .row{
@@ -4772,3 +4772,25 @@ a.meanmenu-reveal i {
 .h-65{
   height: 65px !important;
 }
+
+.emotionalsupport-area {
+  background-image: url(img/bg/emotionalsupport.png);
+  padding: 140px 0 133px;
+  z-index: 1;
+}
+.fitness-area {
+  background-image: url(img/bg/Fitness.png);
+  padding: 140px 0 133px;
+  z-index: 1;
+}
+.massage-area {
+  background-image: url(img/bg/massage.png);
+  padding: 140px 0 133px;
+  z-index: 1;
+}
+.contactus-area {
+  background-image: url(img/bg/contactus.png);
+  padding: 140px 0 133px;
+  z-index: 1;
+}
+
