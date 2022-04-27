@@ -797,7 +797,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-pl
 }
 @media only screen and (max-width: 479px) {
   .section-title h2 {
-    font-size: 18px;
+    font-size: 25px;
     line-height: 14px;
   }
 }
@@ -988,7 +988,9 @@ input[type=number]::-webkit-outer-spin-button {
   height: 460px !important;
 }
 
-
+.mobile-only{
+  display: none;
+}
 /*----------------------------------------*/
 /*  2.  Header Area
 /*----------------------------------------*/
@@ -1316,6 +1318,126 @@ a.meanmenu-reveal {
 @media only screen and (max-width: 479px) {
   a.meanmenu-reveal {
     top: -50px;
+  }
+  .desktop-only{
+    display: none !important;
+  }
+  .nivoSlider{
+    height: 170px;
+  }
+  .about-image-2 {
+    width: 100% !important;
+  }
+  .m-mob-0{
+    margin: 0px !important;
+  }
+  .p-mob-0{
+    padding: 0px !important;
+  }
+  .donation-area h1 {
+    font-size: 50px !important;
+  }
+  .event-list {
+    display: flex !important;
+  }
+  .bg-form {
+    padding: 50px !important;
+  }
+  .section-title{
+    margin: 10px auto 20px;
+  }
+  .about-area{
+    padding: 10px 30px !important;
+  }
+  .about-area .about-content-2-p {
+    font-size: 20px !important;
+  }
+  .ourteam-area{
+    padding: 10px 30px !important;
+  }
+  .ourteam-area p {
+    margin-top: 20px !important;
+  }
+  .help-area{
+    padding-top: 0px !important;
+  }
+  .help-area h3 {
+    font-size: 34px !important;
+  }
+  .help-area input {
+    width: 100% !important;
+    margin: 10px auto !important;
+    height: 50px !important;
+  }
+  .faq-area{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .faq-content {
+    text-align: left !important;
+  }
+  .faq-content h2{
+    font-size: 24px !important;
+  }
+  .faq-content h3,p{
+    font-size: 18px !important;
+  }
+  .mobile-img,.faq-image img{
+    width: 200px !important;
+  }
+  .footer-top-area{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .h-mobile-500{
+    height: 500px !important;
+  }
+  .about-content-2 .button {
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+  }
+  .donation-area{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .m-pt-90{
+    padding-top: 90px !important;
+  }
+  .volunteer-area{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .single-volunteer .image img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .single-volunteer .content h2 {
+    margin-top: 15px !important;
+  }
+  .single-volunteer .content p {
+    text-align: justify !important;
+    padding: 10px !important;
+  }
+  .testimonial-area{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .single-testimonial img {
+    top: 0 !important;
+  }
+  .single-testimonial .content {
+    top: -100px !important;
+  }
+  .m-mtb-5{
+    margin: 5px auto !important;
+  }
+  #donation-form-2 button {
+    font-size: 25px !important;
+    height: 50px !important;
+  }
+  .offer-area{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
   }
 }
 a.meanmenu-reveal:hover {
@@ -1999,6 +2121,7 @@ a.meanmenu-reveal i {
 /*-- About Image 2 --*/
 .about-image-2 {
   position: relative;
+  width: 670px;
 }
 .about-image-2 img {
   width: 100%;
@@ -2126,7 +2249,7 @@ a.meanmenu-reveal i {
 }
 @media only screen and (max-width: 479px) {
   .about-content-2 h2 {
-    font-size: 16px;
+    font-size: 25px;
     line-height: 22px;
   }
 }
@@ -2536,7 +2659,7 @@ a.meanmenu-reveal i {
 }
 @media only screen and (max-width: 767px) {
   .donation-title-2 h3 {
-    font-size: 12px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
 }
@@ -2726,6 +2849,7 @@ a.meanmenu-reveal i {
 @media only screen and (max-width: 767px) {
   #donation-form-2 input[type=submit] {
     width: 100%;
+    font-size: 25px;
   }
 }
 #donation-form-2 input[type=submit]:focus {
@@ -2761,7 +2885,7 @@ a.meanmenu-reveal i {
 }
 .btn-book{
   font-family: "HKGrotesk-Regular" !important;
-  font-size: 22px !important;
+  font-size: 20px !important;
 }
 /*----------------------------------------*/
 /*  8.  Causes Area
@@ -3026,8 +3150,7 @@ a.meanmenu-reveal i {
 }
 @media only screen and (max-width: 479px) {
   .single-fact {
-    width: 220px;
-    padding: 45px 30px;
+    width: 180px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3240,6 +3363,7 @@ a.meanmenu-reveal i {
     border: none;
     width: 100%;
     padding: 15px 20px 15px;
+    margin: auto;
   }
 }
 .event-list .content a {
@@ -4790,7 +4914,7 @@ a.meanmenu-reveal i {
 }
 .contactus-area {
   background-image: url(img/bg/contactus.png);
-  padding: 140px 0 133px;
+  padding: 250px 0 133px;
   z-index: 1;
 }
 
