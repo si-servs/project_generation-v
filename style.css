@@ -1439,6 +1439,54 @@ a.meanmenu-reveal {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
   }
+  .contact-area{
+    padding-top:20px !important;
+  }
+  .contact-title{
+    font-size: 25px !important;
+    line-height: 30px !important;
+  }
+  .contact-radio{
+    font-size: 18px !important;
+    padding: 5px !important;
+    margin-bottom: 10px !important;
+    max-width: 100% !important;
+  }
+  .contact-radio input[type=radio]{
+    width: 15px !important;
+    height: 15px !important;
+    margin-right: 10px !important;
+  }
+  .contact-location select{
+    width: 370px !important;
+    height: 40px !important;
+    padding-left: 20px !important;
+    font-size: 18px !important;
+  }
+  .contact-about{
+    width: 100% !important;
+    margin: 0px auto 20px !important;
+    padding: 30px !important;
+  }
+  .contact-about h1{
+    font-size: 25px !important;
+  }
+  .contact-about label{
+    font-size: 18px !important;
+  }
+  .contact-about input[type="text"]{
+    font-size: 18px !important;
+    height: 40px !important;
+  }
+  .contact-text textarea{
+    width: 100% !important;
+    font-size: 18px !important;
+    padding: 30px !important;
+  }
+  .footer-bottom-area{
+    position: relative;
+    top: -50px;
+  }
 }
 a.meanmenu-reveal:hover {
   background-color: #77c14b;
