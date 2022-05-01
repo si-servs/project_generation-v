@@ -140,18 +140,18 @@
                         <div class="row justify-content-md-center mb-10 mt-10">
                             <div class="col-lg-4 col-12">
                                 <div class="row session-nb">
-                                    <div class="col-4"><input type="number" value="0"></div>
+                                    <div class="col-4"><input type="number" value="0" name="sessions" id="sessions"></div>
                                     <div class="col-8 justify-content-md-center mt-10"><h3>Sessions</h3></div>
                                 </div>
                             </div>
                         </div>
                         <div class="row justify-content-md-center mb-10 mt-10">
-                            <div class="col-lg-3 col-12 m-mtb-5"><button>Individual</button></div>
-                            <div class="col-lg-3 col-12 m-mtb-5"><button>3 Sessions</button></div>
-                            <div class="col-lg-3 col-12 m-mtb-5"><button>10 Sessions</button></div>
+                            <div class="col-lg-3 col-12 m-mtb-5"><button onclick="document.getElementById('sessions').value=1">Individual</button></div>
+                            <div class="col-lg-3 col-12 m-mtb-5"><button onclick="document.getElementById('sessions').value=3">3 Sessions</button></div>
+                            <div class="col-lg-3 col-12 m-mtb-5"><button onclick="document.getElementById('sessions').value=10">10 Sessions</button></div>
                         </div>
                         <div class="row justify-content-md-center mb-10 mt-10">
-                            <div class="col-lg-4 col-12"><input class="h-65" type="submit" value="Book an Appointment"></div>
+                            <div class="col-lg-4 col-12"><input class="h-65" type="submit" value="Book an Appointment" id="book"></div>
                         </div>
                     </div>
                 </form>
@@ -237,7 +237,7 @@
                     <span class="footer-title">Our hours</span><br>
                     <span class="footer-text">9:00 AM – 6.00 PM<br>Sunday – Friday</span><br><br>
                     <span class="footer-title">Contact us</span><br>
-                    <span class="footer-text">Phone: 1 800 755 60 20<br>Email: contact@company.com</span><br><br>
+                    <span class="footer-text">Phone: 1 800 755 60 20<br>Email: info@generationvs.com</span><br><br>
                     <div class="footer-social fix">
                         <a target="_blank" rel="noopener" href="https://www.instagram.com/generation.vs/"><i class="fa fa-instagram"></i></a>
                         <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/generation-v/"><i class="fa fa-linkedin-square"></i></a>
@@ -260,7 +260,7 @@
     </div>
     <!-- Footer Bottom Area End -->
 
-
+</div>
 <!-- Body main wrapper end -->
 
 <!-- JS -->
@@ -278,7 +278,16 @@
 <!-- Main JS
 ============================================ -->
 <script src="js/main.js"></script>
-
+    <script>
+        $("#book").click(function(e){
+            let sessions= $("#sessions").val();
+            e.preventDefault();
+            window.location.href="https://wa.me/971509692636?text=Hi, I want to book "+sessions+" companionship session(s).";
+        });
+        $('form').submit(function(e) {
+            e.preventDefault();
+        });
+    </script>
 </body>
 
 </html>

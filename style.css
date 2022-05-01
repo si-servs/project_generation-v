@@ -1487,6 +1487,9 @@ a.meanmenu-reveal {
     position: relative;
     top: -50px;
   }
+  .nivo-controlNav{
+    display: none;
+  }
 }
 a.meanmenu-reveal:hover {
   background-color: #77c14b;
