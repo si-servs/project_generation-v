@@ -52,12 +52,16 @@
                                 <li><a href="faq.html">FAQ</a></li>
                                 <li><a href="contact.html">Contact us</a></li>
                                 <li><a class="mobile-only" href="javascript:void(0)">OUR BLOG</a></li>
+                                <li><a class="mobile-only" href="https://wa.me/971503259210" target="_blank"><img src="img/icon/whatsapp.png" width="25px" style="margin-top: -5px;"/> Message Us</a></li>
                             </ul>
                         </nav>
                     </div>
                     <!-- Header Search Wrapper -->
                     <div class="header-blog col-auto desktop-only">
                         <a href="javascript:void(0)" class="button">OUR BLOG</a>
+                    </div>
+                    <div class="header-blog col-auto desktop-only whatsapp-button">
+                        <a href="https://wa.me/971503259210" class="button" target="_blank"><img src="img/icon/whatsapp.png" width="25px" style="margin-top: -5px;"/> Message Us</a>
                     </div>
                     <!-- Mobile Menu -->
                     <div class="mobile-menu col-12 d-lg-none"></div>
@@ -235,7 +239,7 @@
     $("#book").click(function(e){
         let sessions= $("#sessions").val();
         e.preventDefault();
-        window.location.href="https://wa.me/971509692636?text=Hi, I want to book "+sessions+" sessions";
+        window.location.href="https://wa.me/971503259210?text=Hi, I want to book "+sessions+" sessions";
     });
     $('form').submit(function(e) {
         e.preventDefault();

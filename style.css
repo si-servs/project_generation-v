@@ -1238,7 +1238,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 .main-menu nav > ul > li > a {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 500;
   color: #34482F;
@@ -4967,5 +4967,10 @@ a.meanmenu-reveal i {
   background-image: url(img/bg/contactus.png);
   padding: 250px 0 133px;
   z-index: 1;
+}
+.whatsapp-button{
+  border: 2px solid #5D9650;
+  background-color: #ffffff;
+  color: #34482F;
 }
 
