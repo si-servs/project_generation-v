@@ -1496,6 +1496,34 @@ a.meanmenu-reveal {
   .mob-order2{
     order: 2;
   }
+  .contactus-area{
+    background-image: url(img/bg/contactusmobile.png) !important;
+    padding: 130px 0 !important;
+  }
+  .image-area{
+    background-image: url(img/bg/toppageimagemobile.png) !important;
+    background-size: auto !important;
+    padding: 50px 0px 0px !important;
+    height: unset !important;
+  }
+  .page-banner-area{
+    background-image: url(img/bg/aboutusbannermobile.png) !important;
+    background-size: auto !important;
+    padding: 200px 0px 0px !important;
+    height: unset !important;
+  }
+  .emotionalsupport-area{
+    background-image: url(img/bg/emotionalsupportmobile.png) !important;
+    background-size: auto !important;
+  }
+  .fitness-area{
+    background-image: url(img/bg/Fitnessmobile.png) !important;
+    background-size: auto !important;
+  }
+  .massage-area{
+    background-image: url(img/bg/massagemobile.jpg) !important;
+    background-size: auto !important;
+  }
 }
 a.meanmenu-reveal:hover {
   background-color: #77c14b;
@@ -3673,6 +3701,8 @@ a.meanmenu-reveal i {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 .single-volunteer .content {
   padding-top: 34px;
